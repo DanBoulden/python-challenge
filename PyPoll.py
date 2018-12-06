@@ -1,3 +1,0 @@
-# Start of PyPoll.py
-
-
