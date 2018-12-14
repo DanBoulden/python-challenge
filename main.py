@@ -181,23 +181,31 @@ print(" -------------------------")
 
 
 # # Create the path for the filename
-# data_output = os.path.join("C:/DAN_BootCamp/Homework_03-Python/03-Python/Homework_03_From_Dan_Boulden/PyBank", "data.csv")
+data_output = os.path.join("C:/DAN_BootCamp/Homework_03-Python/03-Python/Homework_03_From_Dan_Boulden/PyPoll", "data.csv")
 
 # print(f"folder path " + data_output)
 
 # # Write data to a .csv file
 
-# with open(data_output, "w", newline="") as csvfile:
-#     writer = csv.writer(csvfile)
+with open(data_output, "w", newline="") as csvfile:
+     writer = csv.writer(csvfile)
 
 # # To save specific data input as a row in the csv
 
-#     writer.writerow([" "])
-#     writer.writerow([" "])    
-#     writer.writerow(["Financial Analysis"])
-#     writer.writerow(["--------------------------------"])
-    #  writer.writerow([f"Total Votes: " + str(Vote_Count)])
-#     writer.writerow([f"Total: $" + str(VTotal)])
-#     writer.writerow([f"Average Change: $" + str(VAvg)])
-#     writer.writerow([f"Greatest Increase in Profits: " + str(MONYEAR_I) + " ($" + str(VTotal_GI3) + ")"])
-#     writer.writerow([f"Greatest Decrease in Profits: " + str(MONYEAR_D) + " ($" + str(VTotal_GI3s) + ")"])
+     writer.writerow([" "])
+     writer.writerow([" "])    
+     writer.writerow(["Election Results"])
+     writer.writerow(["--------------------------------"])
+     writer.writerow([f"Total Votes: " + str(Vote_Count)])
+     writer.writerow(["--------------------------------"])
+     writer.writerow([f"Khan: " + "{:.3%}".format(Khan_Par) + " (" + str(Khan_Count) + ")"])
+     writer.writerow([f"Correy: " + "{:.3%}".format(Correy_Par) + " (" + str(Correy_Count) + ")"])
+     writer.writerow([f"Li: " + "{:.3%}".format(Li_Par) + " (" + str(Li_Count) + ")"])
+     writer.writerow([f"O'Tooley: " + "{:.3%}".format(OTooley_Par) + " (" + str(OTooley_Count) + ")"])
+     writer.writerow([f"Other: " + "{:.3%}".format(Other_Par) + " (" + str(Other_Count) + ")"])
+     writer.writerow(["--------------------------------"])
+     writer.writerow([max_key + " is the winner with " + str(Winner) + " votes."])
+     writer.writerow(["--------------------------------"])
+    #  writer.writerow([max_key + " is the winner with " + str(Winner) + " votes."])
+    #  writer.writerow([f"Greatest Increase in Profits: " + str(MONYEAR_I) + " ($" + str(VTotal_GI3) + ")"])
+    #  writer.writerow([f"Greatest Decrease in Profits: " + str(MONYEAR_D) + " ($" + str(VTotal_GI3s) + ")"])
