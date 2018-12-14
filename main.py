@@ -117,11 +117,11 @@ print(f"Total Months: " + str(Month_Row_Count))
 print(f"Total: $" + str(VTotal))
 print(f"Average Change: $" + str(VAvg))
 print(f"Greatest Increase in Profits: " + str(MONYEAR_I) + " ($" + str(VTotal_GI3) + ")")
-print(f"gi1 " + str(VTotal_GI1) + "       GI2 " + str(VTotal_GI2))
-print(f"VTL " + str(VTotal_Large) + "       VTB " + str(VTotal_before))
+# print(f"gi1 " + str(VTotal_GI1) + "       GI2 " + str(VTotal_GI2))
+# print(f"VTL " + str(VTotal_Large) + "       VTB " + str(VTotal_before))
 print(f"Greatest Decrease in Profits: " + str(MONYEAR_D) + " ($" + str(VTotal_GI3s) + ")")
-print(f"gi1 " + str(VTotal_GI1s) + "       GI2 " + str(VTotal_GI2s))
-print(f"VTL " + str(VTotal_small) + "       VTB " + str(VTotal_before))
+# print(f"gi1 " + str(VTotal_GI1s) + "       GI2 " + str(VTotal_GI2s))
+# print(f"VTL " + str(VTotal_small) + "       VTB " + str(VTotal_before))
 
 
 
